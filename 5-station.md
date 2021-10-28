@@ -1,10 +1,10 @@
-#För visning av en station
+# För visning av en station
 
 ````http request
-GET https://api/station/1234
+GET /api/station/1234
 ````
 
-````json
+````jsonc
 {
   "id": 785,
   "namn": "Glommens fiskehamn",
