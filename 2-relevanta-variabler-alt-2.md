@@ -1,4 +1,4 @@
-#Vilka variabler är valbara i kartfiltret
+# Vilka variabler är valbara i kartfiltret
 Snarlikt till föregående exempel. Beroende på vad man väljer för filter i kartan så vill jag bara att man skall kunna välja variabler som har data.
 
 _(Dessa två kan man säkert slå ihop till en gemensam)_
@@ -11,11 +11,11 @@ Saker man kan filtrera på:
 Idag hämtar jag en lista en gång över hela strukturen över när olika variabler är relevanta:
 
 ````http request
-GET https://api.example.com/relevanta-variabler
+GET /api/relevanta-variabler
 ````
 
 Förväntat svar är:
-````json
+````jsonc
 { // En per variabel
   "23": {
     "vattenmiljöer": [ 1, 2 ],
@@ -32,7 +32,7 @@ Förväntat svar är:
 ````
 Men anropet skulle lika gärna kunna vara med lite parametrar, och att det då görs ett anrop varje gång man gör ett val filtret och då blir istället anropet som i den första filen:
 ````http request
-GET https://api/relevanta-variabler?vattenmiljo=1&omrade=12&miljoovervakning=2
+GET /api/relevanta-variabler?vattenmiljo=1&omrade=12&miljoovervakning=2
 ````
 
 Förväntat resultat:
