@@ -3,12 +3,12 @@ Hämtar alla kartprickar för stationer/vattenförekomster/bedömningsområden, 
 
 Används för att som sagt rita ut prickarna på kartan, men även för att kunna dölja / visa dom beroende på valda filter.
 ````http request
-GET https://api/statusar
+GET /api/statusar
 ````
 
 Förväntat resultat är GEO-JSON:
 
-````json
+````jsonc
 [
   {
     "type": "Feature",
@@ -49,7 +49,7 @@ Det är ganska stor lista på ca 500kb data (utan komprimering) 67kb (med gzip).
 
 Man skulle kunna tänka sig att dela upp den så här istället för att slippa det här med entity_id och entity_type:
 
-````json
+````jsonc
 {
   "vattenförekomster": [
     {
