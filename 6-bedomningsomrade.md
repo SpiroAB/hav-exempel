@@ -1,10 +1,10 @@
 #För visning av ett bedömningsområde
 
 ````http request
-GET https://api/bedomningsomrade/1234
+GET /api/bedomningsomrade/1234
 ````
 
-````json
+````jsonc
 {
   "id": 785,
   "namn": "Glommens fiskehamn",
