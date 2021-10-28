@@ -11,7 +11,7 @@ Saker man kan filtrera på:
 Idag hämtar jag en lista en gång över hela strukturen över när olika variabler är relevanta:
 
 ````http request
-GET https://api/relevanta-variabler
+GET https://api.example.com/relevanta-variabler
 ````
 
 Förväntat svar är:
