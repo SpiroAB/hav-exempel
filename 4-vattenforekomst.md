@@ -1,13 +1,13 @@
-#För visning av en vattenförekomst
+# För visning av en vattenförekomst
 När man klickar på prick på kartan.
 
 Även här så hämtar jag en rätt stort objekt med all data jag behöver. För att t ex inte behöva hämta ny data om besökaren väljer att titta på en annan variabel i vattenförekomsten.
 
 ````http request
-GET https://api/vattenforekomst/12345
+GET /api/vattenforekomst/12345
 ````
 
-````json
+````jsonc
 {
   "id": 12345,
   "namn": "N m Hallands kustvatten",
