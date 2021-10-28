@@ -22,7 +22,7 @@ _Jag behöva veta vilka variabler som tillhör variabelgruppen "Vattnets egenska
 
 Så jag tänker mig att jag hämtar detta så här:
 ````http request
-GET https://api/relevanta-variabler?variabelgrupp=23&vattenmiljo=1
+GET /api/relevanta-variabler?variabelgrupp=23&vattenmiljo=1
 ````
 Och förväntar mig att få tillbaka ett svar i JSON format, som är en lista över variabel id t ex:
 ````json
@@ -34,7 +34,7 @@ Samma förfrågan skall man istället kunna göra där man istället skickar med
 _Vilka variabler som tillhör variabelgruppen "Vattnets egenskaper" och som har data för någon stationer/vattenförekomster/bedömningsområden i hela området "Skagerrak"._
 
 ````http request
-GET https://api/relevanta-variabler?variabelgrupp=23&omrade=14
+GET /api/relevanta-variabler?variabelgrupp=23&omrade=14
 ````
 Och förväntar mig att få tillbaka ett svar i JSON format, som är en lista över variabel id t ex:
 ````json
